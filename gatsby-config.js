@@ -87,5 +87,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [{ regex: "^/blog" }],
+        excludePaths: ["/blog/"],
+        height: 4,
+        prependToBody: false,
+        color: `#663399`,
+        footerHeight: 0,
+      }
+    }
   ],
 }
