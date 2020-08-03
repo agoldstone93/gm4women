@@ -11,31 +11,29 @@ export default class LineGraph extends Component {
         new Chart(myChartRef, {
             type: 'bar',
             data: {
-                labels: ['Employment', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Employment', 'Society', 'Health & Culture', 'Participation', 'Employment'],
                 datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                    'rgba(255, 99, 132, 0.4)',
-                    'rgba(54, 162, 235, 0.4)',
-                    'rgba(255, 206, 86, 0.4)',
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
-                ]
-            }]
-        },
+                    label: '2018', 
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: 'rgba(75, 192, 192, 0.4)'
+                },
+                {
+                    label: '2019',
+                    data: [4, 15, 3, 9, 12],
+                    backgroundColor: 'rgba(153, 102, 255, 0.4)'
+                }]
+            },
             options: {
                 legend: {
                     display: true
                 },
                 scales: {
                     yAxes: [{
-                        gridLines: {
+                        ticks: {
                             display: false
                         },
-                        ticks: {
-                            beginAtZero: true
+                        gridLines: {
+                            display: false
                         }
                     }],
                     xAxes: [{
@@ -49,12 +47,7 @@ export default class LineGraph extends Component {
     }
     render() {
         return (
-            <div>
-                <canvas
-                    id="myChart"
-                    ref={this.chartRef}
-                />
-            </div>
+            <div><canvas id="myChart" ref={this.chartRef} /></div>
         )
     }
 }
