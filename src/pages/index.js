@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import Graph from "../components/graph"
 
 class IndexPage extends React.Component {
   render() {
@@ -34,6 +35,7 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
+        <Graph/>
       </Layout>
     )
   }
