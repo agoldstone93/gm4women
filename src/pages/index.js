@@ -17,21 +17,18 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+        {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> this is a picture*/}
         <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
+          We want gender equality by the centenary of women getting the vote, 2028
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
+        <h3>
+          We collect data to produce our annual scorecard, which shows how equal society is for women in Greater Manchester
+        </h3>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          We focus collecting and reporting in 5 main areas: Education, society, health and culture, participation and employment.
         </p>
-        <p>Now go build something great!</p>
-
-        <p>This is a new paragraph</p>
+        <p>We recruit local women's organisations to participate so we accurate information.
+        </p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
