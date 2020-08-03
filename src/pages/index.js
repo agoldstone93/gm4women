@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
         <p>
           We focus collecting and reporting in 5 main areas: Education, society, health and culture, participation and employment.
         </p>
-        <p>We recruit local women's organisations to participate so we accurate information.
+        <p>We recruit local women's organisations to participate so we have accurate information.
         </p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
