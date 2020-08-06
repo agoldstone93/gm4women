@@ -24,6 +24,7 @@ class Layout extends React.Component {
             </Link>
             <ul style={{ listStyle: `none`, float: `right` }}>
               <ListLink to="/">Home</ListLink>
+              <ListLink to="/committees">Committees</ListLink>
               <ListLink to="/blog/">Blog</ListLink>
             </ul>
           </header>
