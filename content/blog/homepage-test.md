@@ -4,7 +4,7 @@ date: 2020-08-10T10:59:12.981Z
 title: Homepage test
 description: Test for the homepage
 ---
-# We want **gender equality** by the centenary of women getting the vote, **2028**
+# We want __gender equality__ by the centenary of women getting the vote, 2028
 
 ### We collect data to produce our annual scorecard, which shows how equal society is for women in Greater Manchester
 
