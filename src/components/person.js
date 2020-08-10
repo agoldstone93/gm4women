@@ -18,7 +18,7 @@ const PersonName = styled.h3 `
 const PersonTitle = styled.p `
     margin: 5px 0px;
 `
-const SocialMedia = styled.div``
+const SocialMedia = styled.div ``
 
 export default function Person (props) {
     return (
