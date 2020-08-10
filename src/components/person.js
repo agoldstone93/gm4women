@@ -1,21 +1,32 @@
 import React from "react"
-import { rhythm } from "../utils/typography"
+import styled from "styled-components"
+
+const CommitteeMember = styled.div `
+    background: grey;
+    display: grid;
+`
+const ProfilePic = styled.img `
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 0px;
+`
+const PersonName = styled.h3 `
+    margin: 5px 0px;
+`
+const PersonTitle = styled.p `
+    margin: 5px 0px;
+`
+const SocialMedia = styled.div``
 
 export default function Person (props) {
-    const imageCropper = {
-        width: 120,
-        height: 120,
-        position: "relative",
-        overflow: "hidden",
-        borderRadius: "50%"
-    }
     return (
-        <div>
-            <div style={imageCropper}>
-                <img src={props.image} alt="Committee Member"/>
-            </div>
-            <p style={{marginTop: rhythm(1 / 4), marginBottom: rhythm(1 / 4)}}>{props.name}</p>
-            <p>{props.subtitle}</p>
-        </div>
+        <CommitteeMember>
+            <ProfilePic src={props.image} alt="Committee Member"/>
+            <PersonName>{props.name}</PersonName>
+            <PersonTitle>{props.subtitle}</PersonTitle>
+            <SocialMedia></SocialMedia>
+        </CommitteeMember>
     )
 }
