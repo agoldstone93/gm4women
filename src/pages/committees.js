@@ -16,6 +16,46 @@ const userData = [
           linkedin: "http://www.linkedin.com",
           website: "http://www.google.com"
         }
+    },{
+        id: 2,
+        name: 'Joe Bloggs',
+        image: pic,
+        subtitle: 'CEO of Cool Company',
+        links: {
+          twitter: "http://www.twitter.com",
+          linkedin: "http://www.linkedin.com",
+          website: "http://www.google.com"
+        }
+    },{
+        id: 3,
+        name: 'Joe Bloggs',
+        image: pic,
+        subtitle: 'CEO of Cool Company',
+        links: {
+          twitter: "http://www.twitter.com",
+          linkedin: "http://www.linkedin.com",
+          website: "http://www.google.com"
+        }
+    },{
+        id: 4,
+        name: 'Joe Bloggs',
+        image: pic,
+        subtitle: 'CEO of Cool Company',
+        links: {
+          twitter: "http://www.twitter.com",
+          linkedin: "http://www.linkedin.com",
+          website: "http://www.google.com"
+        }
+    },{
+        id: 5,
+        name: 'Joe Bloggs',
+        image: pic,
+        subtitle: 'CEO of Cool Company',
+        links: {
+          twitter: "http://www.twitter.com",
+          linkedin: "http://www.linkedin.com",
+          website: "http://www.google.com"
+        }
     }
 ]
 

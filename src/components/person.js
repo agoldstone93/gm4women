@@ -9,13 +9,14 @@ const CommitteeMember = styled.div `
     justify-items: center;
     padding: 10px;
     max-width: 300px;
+    margin: 10px;
 `
 const ProfilePic = styled.img `
     object-fit: cover;
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 `
 const PersonName = styled.h3 `
     margin: 5px 0px;
@@ -25,7 +26,6 @@ const PersonTitle = styled.p `
 `
 const LinksDiv = styled.div `
     display: flex;
-    text-decoration: none;
 `
 const LinkUrl = styled.a `
     text-decoration: none;
@@ -41,7 +41,7 @@ const StyledTwitter = styled(Twitter) `
 `
 
 export default function Person (props) {
-    return (
+    return (  
         <CommitteeMember>
             <ProfilePic src={props.image} alt="Committee Member"/>
             <PersonName>{props.name}</PersonName>
@@ -54,7 +54,6 @@ export default function Person (props) {
                     <StyledTwitter />
                 </LinkUrl>
             </LinksDiv>
-
         </CommitteeMember>
     )
 }

@@ -12,7 +12,7 @@ const ListLink = props => (
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { children } = this.props
 
     
     return (
@@ -20,7 +20,7 @@ class Layout extends React.Component {
         <div style={{ margin: `2rem auto`, maxWidth: rhythm(30), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
           <header style={{ marginBottom: `1.5rem` }}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-              <h3 style={{ display: `inline` }}>{title}</h3>
+              <h3 style={{ display: `inline` }}>GM4Women</h3>
             </Link>
             <ul style={{ listStyle: `none`, float: `right` }}>
               <ListLink to="/">Home</ListLink>
