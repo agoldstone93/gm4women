@@ -1,9 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import {LinkedinSquare} from '@styled-icons/boxicons-logos/'
+import {Twitter} from '@styled-icons/boxicons-logos/'
 
 const CommitteeMember = styled.div `
-    background: grey;
+    background: lightgrey;
     display: grid;
+    justify-items: center;
+    padding: 10px;
+    max-width: 300px;
 `
 const ProfilePic = styled.img `
     object-fit: cover;
@@ -18,7 +23,22 @@ const PersonName = styled.h3 `
 const PersonTitle = styled.p `
     margin: 5px 0px;
 `
-const SocialMedia = styled.div ``
+const LinksDiv = styled.div `
+    display: flex;
+    text-decoration: none;
+`
+const LinkUrl = styled.a `
+    text-decoration: none;
+`
+const StyledLinkedin = styled(LinkedinSquare)`
+    color: purple;
+    height: 30px;
+    text-decoration: none;
+`
+const StyledTwitter = styled(Twitter) `
+    color: purple;
+    height: 30px;
+`
 
 export default function Person (props) {
     return (
@@ -26,7 +46,15 @@ export default function Person (props) {
             <ProfilePic src={props.image} alt="Committee Member"/>
             <PersonName>{props.name}</PersonName>
             <PersonTitle>{props.subtitle}</PersonTitle>
-            <SocialMedia></SocialMedia>
+            <LinksDiv>
+                <LinkUrl href={props.linkedin}>
+                    <StyledLinkedin />
+                </LinkUrl>
+                <LinkUrl href={props.twitter}>
+                    <StyledTwitter />
+                </LinkUrl>
+            </LinksDiv>
+
         </CommitteeMember>
     )
 }

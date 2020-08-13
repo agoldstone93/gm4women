@@ -17,7 +17,7 @@ class Layout extends React.Component {
     
     return (
       <Wrapper>
-        <div style={{ margin: `3rem auto`, maxWidth: rhythm(24), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
+        <div style={{ margin: `2rem auto`, maxWidth: rhythm(30), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
           <header style={{ marginBottom: `1.5rem` }}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
               <h3 style={{ display: `inline` }}>{title}</h3>
