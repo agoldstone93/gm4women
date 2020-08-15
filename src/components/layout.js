@@ -6,7 +6,15 @@ import { rhythm } from "../utils/typography"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
+    <Link
+      to={props.to}
+      style={{ color: `black`, boxShadow: `none`, fontFamily: `Montserrat`, fontWeight: `900`}}
+      activeStyle={{
+        boxShadow: `0 2.5px 0 indigo`
+      }}
+    >
+      {props.children}
+    </Link>
   </li>
 )
 
@@ -14,12 +22,14 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
 
-    
     return (
       <Wrapper>
-        <div style={{ margin: `2rem auto`, maxWidth: rhythm(30), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
-          <header style={{ marginBottom: `1.5rem` }}>
-            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+        <div style={{ margin: `2rem auto`, maxWidth: rhythm(30) }}>
+          <header style={{ marginBottom: `0rem` }}>
+            <Link
+              to="/"
+              style={{ textShadow: `none`, backgroundImage: `none` }}
+            >
               <h3 style={{ display: `inline` }}>GM4Women</h3>
             </Link>
             <ul style={{ listStyle: `none`, float: `right` }}>
@@ -28,10 +38,13 @@ class Layout extends React.Component {
               <ListLink to="/blog/">Blog</ListLink>
             </ul>
           </header>
-          <main>{children}</main>
         </div>
+        <main>{children}</main>
         <Footer>
-          <small>&copy; {new Date().getFullYear()}, GM4Women. Built by Adam</small>
+          <small>
+            &copy; {new Date().getFullYear()}, GM4Women. Built by Adam
+          </small>
+          {/* Add privacy policy */}
         </Footer>
       </Wrapper>
     )

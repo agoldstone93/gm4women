@@ -45,7 +45,13 @@ export default class LineGraph extends Component {
                     }]
                 },
                 tooltips: { enabled: false },
-                maintainAspectRatio: false
+                maintainAspectRatio: false,
+                plugins: {
+                    chartJsPluginBarchartBackground: {
+                      color: '#efefef',
+                      mode: 'odd'
+                    }
+                  }
             },
             plugins: [ChartDataLabels]
         });
@@ -54,7 +60,7 @@ export default class LineGraph extends Component {
     render() {
         return (
             <div>
-                <canvas id="myChart" ref={this.chartRef} />
+                <canvas id="myChart" ref={this.chartRef} style={{border: `1px solid grey`}} />
             </div>
 
         )
