@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Graph from "../components/graph"
+import Supporters from "../components/supporters"
 
 const BigText = styled.h1`
   display: inline;
@@ -12,19 +13,12 @@ const StyledBigText = styled(BigText)`
   text-decoration: underline;
   text-decoration-color: green;
 `
-
-const GraphTitles = styled.h3`
-  font-size: 20px;
-  margin-top: 5px;
-  padding-bottom: 20px;
-`
 const PageContainer = styled.div`
   padding: 0 5rem;
 `
 const ColorBlock = styled.div `
   background-color: lightgrey;
-  margin: 0;
-  padding: 0;
+  left: 0px;
 `
 const TopColorBlock = styled(ColorBlock) `
   height: 90vh;
@@ -86,24 +80,11 @@ class IndexPage extends React.Component {
               equality data with the goal of achieving equality across all areas
               by 2028 - the centenary of equal franchise. ​
             </p>
-            <div
-              style={{
-                display: `grid`,
-                gridTemplateColumns: `1fr 1fr 1fr 1fr 1fr`,
-                justifyItems: `center`,
-              }}
-            >
-              <GraphTitles>Employment</GraphTitles>
-              <GraphTitles>Safety</GraphTitles>
-              <GraphTitles>Participation</GraphTitles>
-              <GraphTitles>Education</GraphTitles>
-              <GraphTitles>Culture</GraphTitles>
-            </div>
             <Graph />
-            {/* Flickity or siema - carousel with quotes */}
-            {/* Our supporters */}
           </PageContainer>
         </ColorBlock>
+      {/* Flickity or siema - carousel with quotes */}
+      {/* Add supporters list */}
       </Layout>
     )
   }

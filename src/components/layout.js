@@ -8,9 +8,14 @@ const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link
       to={props.to}
-      style={{ color: `black`, boxShadow: `none`, fontFamily: `Montserrat`, fontWeight: `900`}}
+      style={{
+        color: `black`,
+        boxShadow: `none`,
+        fontFamily: `Montserrat`,
+        fontWeight: `900`,
+      }}
       activeStyle={{
-        boxShadow: `0 2.5px 0 indigo`
+        boxShadow: `0 2.5px 0 indigo`,
       }}
     >
       {props.children}
