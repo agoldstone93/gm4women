@@ -3,8 +3,15 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Graph from "../components/graph"
-import Supporters from "../components/supporters"
 
+const FullWidthColor = styled.div `
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: lightgrey; 
+`
+const TopFullWidthColor = styled(FullWidthColor) `
+  height: 90vh;
+`
 const BigText = styled.h1`
   display: inline;
   font-size: 10vh;
@@ -12,17 +19,6 @@ const BigText = styled.h1`
 const StyledBigText = styled(BigText)`
   text-decoration: underline;
   text-decoration-color: green;
-`
-const PageContainer = styled.div`
-  padding: 0 5rem;
-`
-const ColorBlock = styled.div `
-  background-color: lightgrey;
-  left: 0px;
-`
-const TopColorBlock = styled(ColorBlock) `
-  height: 90vh;
-  width: 100vw;
 `
 
 class IndexPage extends React.Component {
@@ -33,16 +29,17 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <TopColorBlock>
-          <PageContainer>
-            <BigText>
-              We want <StyledBigText>gender equality</StyledBigText> by the
-              centenary of women getting the vote,{" "}
-              <StyledBigText>2028</StyledBigText>
-            </BigText>
-          </PageContainer>
-        </TopColorBlock>
-        <PageContainer>
+        <TopFullWidthColor>
+          <BigText>
+            We want <StyledBigText>gender equality</StyledBigText> by the
+            centenary of women getting the vote,{" "}
+            <StyledBigText>2028</StyledBigText>
+          </BigText>
+        </TopFullWidthColor>
+
+        
+        
+        
           <h2>
             We collect data to produce our annual scorecard, which shows how
             equal society is for women in Greater Manchester
@@ -66,10 +63,10 @@ class IndexPage extends React.Component {
             Scorecard will once again see Greater Manchester leading the charge
             to bring progress and accountability for women’s rights.
           </p>
-        </PageContainer>
-        <ColorBlock>
-          <PageContainer>
-            <h1 style={{paddingTop: `1.5em`}}>Scorecard</h1>
+        
+        <FullWidthColor>
+          
+            <h1>Scorecard</h1>
             <p>
               Our scorecard is named after Emmeline Pankhurst and Millicent
               Fawcett, two iconic figures who were among the first leaders of the
@@ -81,8 +78,8 @@ class IndexPage extends React.Component {
               by 2028 - the centenary of equal franchise. ​
             </p>
             <Graph />
-          </PageContainer>
-        </ColorBlock>
+          
+        </FullWidthColor>
       {/* Flickity or siema - carousel with quotes */}
       {/* Add supporters list */}
       </Layout>

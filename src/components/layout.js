@@ -1,8 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
-
+import styled, { createGlobalStyle } from "styled-components"
 import { rhythm } from "../utils/typography"
+
+const GlobalStyle = createGlobalStyle`
+  body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+`
+
+const Wrapper = styled.div`
+  min-height: 100vh;
+`
+
+const Footer = styled.footer`
+  text-align: center;
+  margin: 24px;
+`
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -29,6 +45,7 @@ class Layout extends React.Component {
 
     return (
       <Wrapper>
+        <GlobalStyle />
         <div style={{ margin: `2rem auto`, maxWidth: rhythm(30) }}>
           <header style={{ marginBottom: `0rem` }}>
             <Link
@@ -43,8 +60,9 @@ class Layout extends React.Component {
               <ListLink to="/blog/">Blog</ListLink>
             </ul>
           </header>
+          <main>{children}</main>
         </div>
-        <main>{children}</main>
+        
         <Footer>
           <small>
             &copy; {new Date().getFullYear()}, GM4Women. Built by Adam
@@ -55,14 +73,5 @@ class Layout extends React.Component {
     )
   }
 }
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
-`
 
 export default Layout
