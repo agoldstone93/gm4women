@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled, { createGlobalStyle } from "styled-components"
-import { rhythm } from "../utils/typography"
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -46,8 +45,8 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <GlobalStyle />
-        <div style={{ margin: `2rem auto`, maxWidth: rhythm(30) }}>
-          <header style={{ marginBottom: `0rem` }}>
+        <div style={{ margin: `2rem auto`, padding: `0 20px`, maxWidth: `1000px` }}>
+          <header style={{ marginBottom: `2rem` }}>
             <Link
               to="/"
               style={{ textShadow: `none`, backgroundImage: `none` }}
@@ -62,7 +61,7 @@ class Layout extends React.Component {
           </header>
           <main>{children}</main>
         </div>
-        
+
         <Footer>
           <small>
             &copy; {new Date().getFullYear()}, GM4Women. Built by Adam
