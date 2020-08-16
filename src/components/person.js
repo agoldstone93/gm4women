@@ -28,15 +28,14 @@ const LinksDiv = styled.div `
     display: flex;
 `
 const LinkUrl = styled.a `
-    text-decoration: none;
+    box-shadow: none; 
 `
 const StyledLinkedin = styled(LinkedinSquare)`
-    color: purple;
+    color: indigo;
     height: 30px;
-    text-decoration: none;
 `
 const StyledTwitter = styled(Twitter) `
-    color: purple;
+    color: indigo;
     height: 30px;
 `
 
