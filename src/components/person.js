@@ -6,26 +6,34 @@ import {Twitter} from '@styled-icons/boxicons-logos/'
 const CommitteeMember = styled.div `
     background: lightgrey;
     display: grid;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr 1fr;
     padding: 10px;
-    max-width: 300px;
-    margin: 10px;
+    width: 300px;
+    border: solid 1px;
+    justify-items: center;
 `
 const ProfilePic = styled.img `
     object-fit: cover;
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
 `
 const PersonName = styled.h3 `
-    margin: 5px 0px;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
 `
 const PersonTitle = styled.p `
-    margin: 5px 0px;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
 `
 const LinksDiv = styled.div `
     display: flex;
+    padding: 0;
+    margin: 0;
 `
 const LinkUrl = styled.a `
     box-shadow: none; 
