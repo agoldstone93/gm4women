@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled, { createGlobalStyle } from "styled-components"
+import logo from "../../content/assets/GM4women2028_Logo.png"
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -49,9 +50,9 @@ class Layout extends React.Component {
           <header style={{ marginBottom: `2rem` }}>
             <Link
               to="/"
-              style={{ textShadow: `none`, backgroundImage: `none` }}
+              style={{ textShadow: `none`, backgroundImage: `none`, boxShadow: `none` }}
             >
-              <h3 style={{ display: `inline` }}>GM4Women</h3>
+              <img src={logo} alt={"GM4Women logo"} style={{ display: `inline`, maxWidth: `200px`, padding: `0`, margin: `0` }} />
             </Link>
             <ul style={{ listStyle: `none`, float: `right` }}>
               <ListLink to="/">Home</ListLink>
