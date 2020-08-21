@@ -41,14 +41,14 @@ class IndexPage extends React.Component {
           We collect data to produce our annual scorecard, which shows how equal
           society is for women in Greater Manchester
         </h1>
-        <h1 style={{fontSize: `20px`}}>
+        <p style={{fontSize: `20px`, fontFamily: `Montserrat`, fontWeight: `900`}}>
           We focus collecting and reporting in 5 main areas: education, society,
           health and culture, participation and employment.
-        </h1>
-        <h1 style={{fontSize: `20px`}}>
+        </p>
+        <p style={{fontSize: `20px`, fontFamily: `Montserrat`, fontWeight: `900`}}>
           We recruit local women's organisations to participate so we have
           accurate information.
-        </h1>
+        </p>
         <h1>Who we are</h1>
         <p>
           Led by Helen Pankhurst, we are a coalition of change-makers committed
