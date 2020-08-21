@@ -5,12 +5,13 @@ import {Twitter} from '@styled-icons/boxicons-logos/'
 
 const CommitteeMember = styled.div `
     background: lightgrey;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 1fr 1fr;
-    padding: 10px;
-    width: 300px;
     border: solid 1px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    padding: 10px;
+    width: 200px;
     justify-items: center;
 `
 const ProfilePic = styled.img `
@@ -18,17 +19,20 @@ const ProfilePic = styled.img `
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 `
 const PersonName = styled.h3 `
     font-size: 1em;
     padding: 0;
     margin: 0;
+    text-align: center;
 `
 const PersonTitle = styled.p `
     font-size: 0.8em;
     padding: 0;
     margin: 0;
+    word-wrap: break-word;
+    text-align: center;
 `
 const LinksDiv = styled.div `
     display: flex;
@@ -51,8 +55,10 @@ export default function Person (props) {
     return (  
         <CommitteeMember>
             <ProfilePic src={props.image} alt="Committee Member"/>
-            <PersonName>{props.name}</PersonName>
-            <PersonTitle>{props.subtitle}</PersonTitle>
+            <div>
+                <PersonName>{props.name}</PersonName>
+                <PersonTitle>{props.subtitle}</PersonTitle>
+            </div>
             <LinksDiv>
                 <LinkUrl href={props.linkedin}>
                     <StyledLinkedin />

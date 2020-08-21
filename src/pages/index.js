@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
         </p>
 
         <FullWidthColor>
-          <h1>Scorecard</h1>
+          <h1>Pankhurst-Fawcett Scorecard</h1>
           <p>
             Our scorecard is named after Emmeline Pankhurst and Millicent
             Fawcett, two iconic figures who were among the first leaders of the
@@ -74,6 +74,18 @@ class IndexPage extends React.Component {
             by 2028 - the centenary of equal franchise. ​
           </p>
           <Graph />
+          <hr />
+          {/* Sources:
+          #1. Annual Population Survey 2017-2019.
+          #2. Annual Survey of Hours and Earnings 2017-2019. 
+          #3. Voices of Survivors Greater Manchester, 2018. Using the same data as last year, no new data.
+          #4. Safety4Sisters, Migrant Women's Right to Safety Pilot Project report, 2016. https://www.southallblacksisters.org.uk/wp-content/uploads/2016/11/Safety4Sisters-North-West-Report.pdf, same indicator as last year, no new data. 
+          #5. This data has been compiled by reference to the websites of the various councils, 2020. 
+          #6. Judicial Diversity Statistics 2018 and 2019. 
+          #7. Higher Education Statistics Authority returns 2016/17 and 2017/18 
+          #8. Department of Education 2015-17 
+          #9. Arts Council 32 organisations, 2017-18 annual survey and 40 organisations in 2018-19 
+          #10. Sport England’s adult active lives, May 2017-18 and May 2018-19 data https://www.sportengland.org/research/active-lives-survey/ https://activelives.sportengland.org/ */}
         </FullWidthColor>
         {/* Flickity or siema - carousel with quotes */}
         {/* Add supporters list */}

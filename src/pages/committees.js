@@ -30,7 +30,7 @@ const userData = [
   },
   {
     id: 3,
-    name: "Prof. Francesca Gains",
+    name: "Prof Francesca Gains",
     image: pic,
     subtitle: "University of Manchester",
     links: {
